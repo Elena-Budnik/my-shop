@@ -80,11 +80,23 @@ padding-right: 15px;
     display: flex;
     position: relative;
 }
-
-.menu a:hover {
+.menu > li:hover> a {
     background-color: #2c71b8;
     color:white;
+    
+}
 
+.icon-arrow{
+    background-image: url(img/v.svg);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+.menu > li:hover > a > .icon-arrow{
+    background-image:url("img/v-white.svg"); 
+    display: inline-block;
+    width: 10px;
+    height: 10px;
 }
 .sub-menu a:hover{
      color: #2c71b8;
@@ -167,12 +179,6 @@ padding-right: 15px;
     background-color: #2c73b5;
     color: rgba(255,255,255,0.75);
   }
-
-
 .menu li:hover > .sub-menu{
     display: block;
-}
-
-.sub-menu>a:hover > .menu>li>.product{
-    background-color: red;
 }
